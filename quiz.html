@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#24323f">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <style>
+  :root {
+  --animate-delay: 0.3s;
+}
+  </style>
+
+  <script src="https://use.fontawesome.com/7a23ce8970.js"></script>
+  <script src="party.js"></script>
+</head>
+<body style="padding:5px;">
+    
+
+<div id="waiting-caontainer" class="animate__animated animate__fadeInDown">
+
+<h3>Hello <label class="user-name-label"></label>,</h3>
+<h4>You are in the waiting room until the host starts the quiz, please be patient. </h4>
+
+<div class="rules">
+    <li class="rule">1. You will have ony 15 seconds, per each question.</li>
+    <li class="rule">2. You can select just one answer.</li>
+    <li class="rule">3. You cannot switch between questions</li>
+    <li class="rule">4. The questions switches automatically</li>
+</div>
+
+<div class="info-box"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+
+
+ </div>
+
+ <div id="question-box" >
+ 
+ <div class="question-header">
+ 
+ <h3 class="quiz-name">Quesiton 1</h3>
+
+ <span id="timer"><label class="timer-text">Time left</label> <label class="timer-label">15</label></span>
+ 
+ </div>
+
+ <div class="question-container">
+
+    <p class="question">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+    </p>
+
+    <div class="answers">
+
+        <label id="first" class="question-label"> <input class="answer" type="radio" name="int" value="1"><span class="ans_one"></span><div id="first-check" class="selected">
+            <i class="fa fa-check"></i>
+        </div>  </label>
+        <label id="second" class="question-label"> <input class="answer" type="radio" name="int" value="1"><span class="ans_two"></span><div id="second-check" class="selected ">
+
+            <i class="fa fa-times"></i>
+
+        </div> </label>
+        <label id="third" class="question-label"> <input class="answer" type="radio" name="int" value="1"><span class="ans_three"></span> <div id="third-check" class="selected ">
+            <i class="fa fa-times"></i>
+        </div>  </label>
+        <label id="fourth" class="question-label"> <input class="answer" type="radio" name="int" value="1"><span class="ans_four"></span><div id="fourth-check" class="selected ">
+            <i class="fa fa-times"></i>
+        </div> </label>
+    </div>
+
+ </div>
+
+
+ <div class="bottom-container">
+
+    <span class="current-question">1/4</span>
+ </div>
+
+
+ </div>
+
+
+ <div class="leader-box">
+    <div class="leader-board">
+        <h3>Leader Board</h3>
+
+        <ul id="attend">
+            
+        </ul>
+        
+    </div>
+
+    <div class="back-button-div">
+<a href="index.html" class="back-button">Go back to home page</a>
+
+    </div>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCvx_eVmN8ktPtSoBopibBiTJw1xxfpMWI",
+    authDomain: "quiztime-31cb5.firebaseapp.com",
+    projectId: "quiztime-31cb5",
+    storageBucket: "quiztime-31cb5.appspot.com",
+    messagingSenderId: "905280325746",
+    appId: "1:905280325746:web:b1740f2230c1855ebf1aeb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="main.js"></script>
+</body>
+</html>
