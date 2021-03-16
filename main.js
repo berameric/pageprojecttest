@@ -163,6 +163,7 @@ function getDashboardData(user){
 
           var sort_results = sortProperties(obj).reverse();
           var parent = document.getElementById("attend");
+	  parent.innerHTML="";
           sort_results.forEach((a,i)=>{
                
             var li = document.createElement("li");
