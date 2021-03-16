@@ -365,7 +365,7 @@ var starCountRef = firebase.database().ref(quiz_code+"/questions");
    
 });
 
-var maxq = 8;
+var maxq = 9;
 var  isStart=false;
 
 
